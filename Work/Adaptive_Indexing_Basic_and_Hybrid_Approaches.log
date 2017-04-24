@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.4.19)  24 APR 2017 07:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.4.19)  24 APR 2017 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -131,18 +131,18 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  915 strings out of 493304
  16512 string characters out of 6139871
- 70861 words of memory out of 5000000
+ 71861 words of memory out of 5000000
  4447 multiletter control sequences out of 15000+600000
  33007 words of font info for 62 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 26i,8n,21p,266b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 26i,8n,21p,555b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (1 page, 47
-494 bytes).
+Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (1 page, 48
+607 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  17 compressed objects within 1 object stream
