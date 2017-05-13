@@ -1,4 +1,7 @@
 \documentclass[10pt, conference, compsocconf]{IEEEtran}
+\usepackage{csquotes}
+\usepackage{epigraph}
+\renewcommand\IEEEkeywordsname{Keywords}
 
 \begin{document}
 
@@ -7,35 +10,70 @@
 
 \maketitle
 
+\epigraph{Therefore, even as an index to a book \\
+So to his mind was young Leander's look}{\textit{Christopher Marlowe\\Hero and Leander, 1593}}
+
 \begin{abstract}
-What did I do in a nutshell?
+What did I do in a nutshell?\\
 \end{abstract}
 
+\begin{IEEEkeywords}
+Database indexing, database cracking, adaptive merging, hybrid approaches
+\end{IEEEkeywords}
+
 \section{Introduction}
-Motivation. Main Idea. Goal. Structure of the paper.
+The concept of indexes was widely used in bibliothecography throughout the history of mankind. %First reference to indexes in the English language is to be found in Christopher Marlowe's \textit{Hero and Leander}, 1593 [1]:
+%\begin{displayquote}
+%Therefore, even as an index to a book \\
+%So to his mind was young Leander's look
+%\end{displayquote} 
+Indexes designed to help the reader find information quickly and easier found their way into the databases. Introduction of such intuitive concept has helped to improve the speed of data retrieval. In the early stages of database technology data and indices were stored on disk in a form of B-Trees.
+
+However, over the years, as in-memory databases (IMDB) found their way to the market, need for more lightweighted index structures that could utilize the fact that data is always in main memory has become evident. At first, precalculated index in a form of a sorted column with pointers to the original records in the table that was stored in main memory has become a concept that helped to decrease the response time for answering a query. However, continuously growing amount of data, more sophisticated queries and unpredictable behavior of a user have turned advantages of indexes into disadvantages. Storing large columns in a main memory has become a problem, need to store indexes to numerous columns has even increased that problem. As it was hard to predict which column is specificly interesting for the user, new indexes have to be calculated online as queries referring to new columns arrive.
+
+All these issues motivated developing of advanced indexing techniques as partial and soft indexes. Both these concepts will be presented in details in Background section. Creators of soft indexes \cite{soft_indexes}, L\"uhring, Sattler, Schmidt and Schallehn, have predicted the future of database indexes. They realised that index cannot remain static after being created, it requires to be continuously tuned as some parameters of database system are changing. Such parameters include workload, size and distribution of data, schema and infrastructure changes. This leads to a conclusion that the best index is a result of query processing with all these parameters kept in mind.
+
+This concept known as adaptive indexing will be presented in this short paper. Some fundamental approaches (e.g. database cracking \cite{cracking} and adaptive merging \cite{merging}) will be discussed in Sections 2 and 3 respectively. Further approaches that try to combine the advantages of both methods will be introduced in Section 5. Presented approaches will be evaluated in Section 7. The work will be concluded by presenting related work in Section 8 and proposing directions for further reasearch in Section 9.
 
 \section{Background}
-Idea of adaptive indexing. First approaches.
+As mentioned before, two indexing methods: \textit{partial indexes} and \textit{soft indexes} were developed to tackle some problems caused by traditional indexes. In this section, both of these approaches and their influence on adaptive indexing will be presented.
+\subsection{Partial Indexes}
+As its name suggests, partial index, also known as filtered index, is an index which contains only part of the indexed column that satisfies some condition. Such condition is usually expressed in a form of an interval known as \textit{inclusion interval}. Depending on selectivity of a condition, the amount of rows in the indexed column can be decreased. This allows to reduce the amount of memory needed to store the index. Creation of such index may be specified as follows:
+\begin{displayquote}
+$CREATE \hspace{0.2 cm} INDEX \hspace{0.2 cm} ON \hspace{0.2 cm} relation(column) name \\ WHERE \hspace{0.2 cm} condition$
+\end{displayquote}
+
+Clearly, selecting the right condition is a key element for creation of partial index. Condition can be found in several ways:\\
+\begin{itemize}
+
+\item{user input}: \\
+
+Obviously, user himself can specify the insertion interval as he/she may possess some additional knowledge about the data. However, one of the major principles of modern DBMS is removing any low-level data management aspects from the user of the system. As a result, some database tuning is needed.\\
+
+\item{index creation as side-effect of query processing \cite{partial1}}: \\
+
+Even though user has been removed from tuning process, he/she can still indirectly participate in finding a suitable condition. The fact that user queries some relation (column) while applying some selection condition, leads to an assumption that data satisfying query condition is of some interest for the user and may be queried again in the future. So, taking query condition from the user as a qualification for partial index is not a bad idea after all. Continuous refinement of a condition and index ad hoc may provide an optimal partial index for given relation. This concept was later used in database cracking.\\
+
+\item{statistical approach \cite{partial2}}: \\
+
+Since index creation in a way described above may increase query processing time, statistical information, like the percentage of queries that access each column or distribution of values iin each column, may be used to perform index creation after data loading and before queries are processed.
+\end{itemize}
+
+\subsection{Soft Indexes}
+Soft indexes proposed in \cite{soft_indexes} is one of the first attempts to pass responsibility for index creation from DBA to DBMS. Index management is carried out in three major steps:
+\begin{itemize}
+\item{Observation}
+\item{Prediction}
+\item{Reaction}
+\end{itemize}
+
+At first, statistical information about current state of the system (workload, data, schema, infrastructure) is collected (Observation). Afterwards, in order to derive an optimal index configuration, a list of index candidates sorted by some criteria is analyzed and top \textit{k} candidates are chosen for materilization in the Reaction phase. During the latter depending on results of Prediction phase, some indexes will be created or deleted.\\
+
+\textbf{Meaning}. Combination of advantages of soft and partial indexes resulted in further approaches known as adaptive indexing. On-the-fly index creation based on query workload and storing only subset of rows in an index motivated the first method for adaptive indexing, called \textit{database cracking}, which will be presented in the next section.
 
 \section{Database Cracking}
-\subsection{Introduction}
-Short description of method 
-\subsection{Strength of Database Cracking}
-Small overhead + further advantages
-\subsection{Weakness of Database Cracking}
-Slow convergence + further disadvantages
-
 \section{Adaptive Merging}
-\subsection{Introduction}
-Short description of method
-\subsection{Strength of Adaptive Merging}
-Fast convergence + further advantages
-\subsection{Weakness of Adaptive Merging}
-Big overhead + further disadvantages
-
 \section{Hybrid Approaches}
-\subsection{Strategies for designing hybrid approach}
-Idea of perfect hybrid. Combination options. Further subsection need to be added.
 
 \section{Evaluation}
 Point out complementary nature of cracking and merging. Compare to other hybrid approaches. Speculate on future and usage of the methods
@@ -46,14 +84,15 @@ Some research on related work has to be done.
 \section{Conclusions}
 What did I find out?
 
-\section{Discussion}
-What does it mean?
-
 \section*{Acknowledgement}
-I thank M.Sc. Gabriel Campero Durand of Otto-von-Guericke-University, Magdeburg for providing insight and expertise to start this research and for his guidance through the whole process of research, writing and evaluation of this scientific work. I would also like to show my gratitude to the DBSE Research Group of Otto-von-Guericke-University, Magdeburg for making this work possible and organising "Seminar on Modern Software Engineering and Database Concepts", during which this research took place.
+I thank M.Sc. Gabriel Campero Durand of Otto-von-Guericke-University, Magdeburg for providing insight and expertise to start this research and for his enormous support throughout the whole process of research, writing and evaluation of this scientific work. I would also like to show my gratitude to the DBSE Research Group of Otto-von-Guericke-University, Magdeburg for making this work possible and organising "Seminar on Modern Software Engineering and Database Concepts", during which this research took place.
 
-\begin{thebibliography}{6}
+\begin{thebibliography}{8}
 
+\bibitem{first_reference}
+Knight, G. Norman. Indexing, the art of a guide to the indexing of books and periodicals. No. 029.5 K55. 1979.
+\bibitem{soft_indexes}
+L\"uhring, Martin, et al. "Autonomous management of soft indexes." Data Engineering Workshop, 2007 IEEE 23rd International Conference on. IEEE, 2007.
 \bibitem{cracking}
 Idreos, Stratos, Martin L. Kersten, and Stefan Manegold. "Database Cracking." CIDR. Vol. 7. 2007.
 \bibitem{survey_cracking}
@@ -66,6 +105,10 @@ Idreos, Stratos, et al. "Merging what's cracked, cracking what's merged: adaptiv
 Pirk, Holger, et al. "Database cracking: fancy scan, not poor man's sort!." Proceedings of the Tenth International Workshop on Data Management on New Hardware. ACM, 2014.
 \bibitem{eval2}
 Schuhknecht, Felix Martin, Alekh Jindal, and Jens Dittrich. "The uncracked pieces in database cracking." Proceedings of the VLDB Endowment 7.2 (2013): 97-108.
+\bibitem{partial1}
+Stonebraker, Michael. "The case for partial indexes." Sigmod Record 18.4 (1989): 4-11.
+\bibitem{partial2}
+Seshadri, Praveen, and Arun Swami. "Generalized partial indexes." Data Engineering, 1995. Proceedings of the Eleventh International Conference on. IEEE, 1995.
 
 \end{thebibliography}
 
