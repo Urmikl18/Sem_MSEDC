@@ -1,4 +1,4 @@
-\documentclass[10pt, conference, compsocconf]{IEEEtran}
+ \documentclass[10pt, conference, compsocconf]{IEEEtran}
 \usepackage{csquotes}
 \usepackage{epigraph}
 \renewcommand\IEEEkeywordsname{Keywords}
@@ -72,6 +72,33 @@ At first, statistical information about current state of the system (workload, d
 \textbf{Meaning}. Combination of advantages of soft and partial indexes resulted in further approaches known as adaptive indexing. On-the-fly index creation based on query workload and storing only subset of rows in an index motivated the first method for adaptive indexing, called \textit{database cracking}, which will be presented in the next section.
 
 \section{Database Cracking}
+After presenting the necessary background about partial and soft indexes, overview of one of the main adaptive indexing approaches, database cracking, will be provided. In the first section (3.A) motivation and main idea of database cracking will be presented, followed by %description of two main algorithms: \textit{CrackInTwo} and \textit{CrackInThree}.
+an example. In conclusion, the approach will be analyzed regarding its performance.
+
+\subsection{Motivation and Basic Idea}
+\textbf{Motivation}.Database cracking is pursuing the goal to provide fast access to the data and the self-organized behavior of database system. It is based on idea that index maintenance is a byproduct of query processing, not updates. In contrast to soft indexes, discussed earlier, database cracking achieves its goal not by tuning system's configuration and choosing the best fitting indexes based on numerous parameters, but by using continuous physical reorganization (cracking the database into manageable pieces).
+
+\textbf{Main Idea}. Here the steps of the method will be presented, followed by explanations:\\
+Assumptions: given a column oriented database with column \textit{A}; range query \textit{q} in a form of either \textit{$c \leq R.A$} or \textit{$c_1 \leq R.A \leq c_2$}
+\begin{enumerate}
+\item{The first time query on attribute \textit{A} arrives, copy of the column is created and cracked (notation:  $A_{crk}$}).\\
+This allows to leave original column intact and fast reconstruction of records. Cracking is performed by partitioning values in $A_{crk}$ as followed:
+\begin{itemize}
+\item{q = $c \leq R.A$}\\
+$A_{crk}$ consists of two partitions, where all elements before some position \textit{p} are smaller than \textit{c} and all elements after position \textit{p} are larger.
+\item{q = $c_1 \leq R.A \leq c_2$}\\
+$A_{crk}$ consists of three partitions, where all elements before some position $p_1$ are smaller than \textit{$c_1$}, all elements after some position $p_2$ are larger than $c_2$ and all elements between $p_1$ and $p_2$ are bigger than $c_1$ and smaller than $c_2$.
+\end{itemize}
+\item{Refine Further queries on attribute \textit{A} arrive}\\
+Partition $A_{crk}$ with regard of earlier cracking. E.g. $q_1 = 5 \leq R.A \leq 10$. After cracking, $A_{crk}$ will contain three partitions as described earlier. When next query arrives $q_2 = 7 \leq R.A$, then cracking should be performed only on part of $A_{crk}$ between positions $p_1$ and $p_2$, as it is known that all elements before position $p_1$ satisfy the query and all elements after $p_2$ don't.
+\item{Cracking Index}\\
+In order to quickly find the partition to refine, each cracker column is supplied with \textit{cracker index} which stores how values are currently distributed in the cracker column. Each node of a tree contains value $v$, its position $p$ in a cracker column and whether $v$ is left or right inclusive regarding $p$.
+\item{Query for new column $B$ arrives}\\
+Perform steps 1 through 3 for new column $B$ and store previous results.
+\end{enumerate}
+\subsection{Cracking Algorithms}
+\subsection{Analysis}
+
 \section{Adaptive Merging}
 \section{Hybrid Approaches}
 
