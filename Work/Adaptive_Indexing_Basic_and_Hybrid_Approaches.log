@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  20 MAY 2017 13:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  28 MAY 2017 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,39 +267,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 17.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 48.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 []\OT1/pcr/m/n/10 CREATE   INDEX   ON
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 51.
+(Font)              <7> on input line 48.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 58--59
-\OT1/ptm/m/n/10 Even though user has been re-moved from tun-ing
- []
-
-
-Underfull \hbox (badness 1521) in paragraph at lines 58--59
-\OT1/ptm/m/n/10 pro-cess, con-sumer can still in-di-rectly par-tic-i-pate in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
@@ -307,104 +292,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+\OT1/ptm/m/n/10 re-la-tion (col-umn) while ap-ply-ing some se-lec-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
 <graphics/partial.png, id=14, 889.82437pt x 371.88937pt>
 File: graphics/partial.png Graphic file (type png)
 
 <use graphics/partial.png>
-Package pdftex.def Info: graphics/partial.png used on input line 65.
+Package pdftex.def Info: graphics/partial.png used on input line 62.
 (pdftex.def)             Requested size: 252.0pt x 105.31996pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-
-Underfull \hbox (badness 1521) in paragraph at lines 98--100
+[2 <./graphics/partial.png>]
+Underfull \hbox (badness 1521) in paragraph at lines 99--101
 \OT1/ptm/m/n/10 As fur-ther queries on at-tribute $\OML/cmm/m/it/10 A$ \OT1/ptm
 /m/n/10 ar-rive, par-ti-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
-\OML/cmm/m/it/10 A[]$ \OT1/ptm/m/n/10 with re-gard of ear-lier crack-ing. E.g.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+\OML/cmm/m/it/10 A[]$ \OT1/ptm/m/n/10 with re-gards to ear-lier crack-ing. E.g.
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
-[2 <./graphics/partial.png>]
-<graphics/cracking.png, id=23, 1036.62282pt x 792.71156pt>
+
+Underfull \hbox (badness 2334) in paragraph at lines 101--103
+\OT1/ptm/m/n/10 which stores how val-ues are cur-rently dis-tributed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+
+ []
+
+<graphics/cracking.png, id=21, 1036.62282pt x 792.71156pt>
 File: graphics/cracking.png Graphic file (type png)
 
 <use graphics/cracking.png>
-Package pdftex.def Info: graphics/cracking.png used on input line 108.
+Package pdftex.def Info: graphics/cracking.png used on input line 109.
 (pdftex.def)             Requested size: 252.0pt x 192.69801pt.
 
-Underfull \hbox (badness 1917) in paragraph at lines 113--115
+Underfull \hbox (badness 1917) in paragraph at lines 115--117
 []\OT1/ptm/b/n/10 Analysis\OT1/ptm/m/n/10 . In or-der to an-a-lyze database cra
 ck-ing, we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 115--116
-\OT1/ptm/m/n/10 af-ter ini-tial in-dex cre-ation. Database crack-ing of-fer
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 115--116
-\OT1/ptm/m/n/10 In gen-eral, first crack takes longer than full scan,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 117--118
-\OT1/ptm/m/n/10 As men-tioned in pre-vi-ous point, database crack-ing
  []
 
 
@@ -413,27 +387,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 131--132
-[]\OT1/ptm/m/n/10 Database crack-ing is is well-suited for in-memory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
- []
-
-[3 <./graphics/cracking.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
+Underfull \hbox (badness 1817) in paragraph at lines 119--120
+\OT1/ptm/m/n/10 As men-tioned in pre-vi-ous point, database crack-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \vbox (badness 1406) has occurred while \output is active []
+
+ [3 <./graphics/cracking.png>]
+Underfull \hbox (badness 7667) in paragraph at lines 135--136
+[]\OT1/ptm/m/n/10 Database crack-ing is well-suited for in-memory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
@@ -443,17 +430,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--152
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
 
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 154--156
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 159--161
 \OT1/ptm/m/n/10 sub-ranges. For over-lap-ping sub-ranges per-form
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
@@ -461,57 +453,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
 File: graphics/merging.png Graphic file (type png)
 
 <use graphics/merging.png>
-Package pdftex.def Info: graphics/merging.png used on input line 163.
+Package pdftex.def Info: graphics/merging.png used on input line 168.
 (pdftex.def)             Requested size: 252.0pt x 188.39964pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 2409) in paragraph at lines 168--170
+Underfull \hbox (badness 2409) in paragraph at lines 174--176
 []\OT1/ptm/b/n/10 Analysis\OT1/ptm/m/n/10 . In or-der to an-a-lyze adap-tive me
 rg-ing, we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
 
  []
 
 
-Underfull \vbox (badness 5817) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 170--172
-\OT1/ptm/m/n/10 by adap-tive merg-ing de-creases faster than that of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
 
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 173--174
+Underfull \hbox (badness 2111) in paragraph at lines 179--180
 []\OT1/ptm/m/n/10 Sorted par-ti-tions: Sorted par-ti-tions in adap-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-
- []
-
-
-Underfull \hbox (badness 2326) in paragraph at lines 175--176
-\OT1/ptm/m/n/10 databases, adap-tive merg-ing en-ables adap-tive in-dex
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 [4 <./graphics/merging.png>]
+Underfull \hbox (badness 2326) in paragraph at lines 181--182
+\OT1/ptm/m/n/10 databases, adap-tive merg-ing en-ables adap-tive in-dex
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 229--230
+[]\OT1/ptm/m/n/8 Idreos, Stratos, Mar-tin L. Ker-sten, and Ste-fan Mane-gold. "
+Self-
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -523,31 +508,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
-
-] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
+[5] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
 Here is how much of TeX's memory you used:
- 3255 strings out of 493029
- 52079 string characters out of 6136235
- 131677 words of memory out of 5000000
- 6766 multiletter control sequences out of 15000+600000
+ 3276 strings out of 493029
+ 52384 string characters out of 6136235
+ 130935 words of memory out of 5000000
+ 6787 multiletter control sequences out of 15000+600000
  38666 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,23p,855b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/te
-xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
+ 37i,7n,23p,1110b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/
+texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
+a.pfb>
 Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (5 pages, 3
-12443 bytes).
+14222 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
