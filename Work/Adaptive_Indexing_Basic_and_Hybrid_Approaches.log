@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  28 MAY 2017 12:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  28 MAY 2017 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,7 +492,95 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--182
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
+
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 200--202
+\OT1/ptm/m/n/10 and the fact, that new par-ti-tions re-main un-sorted,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 202--204
+\OT1/ptm/m/n/10 sorted par-ti-tions, it still brings more or-der to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
+\OT1/ptm/m/n/10 Al-though, Crack-Crack al-go-rithm sig-nif-i-cantly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
+
+ []
+
+[5]
+Underfull \hbox (badness 1571) in paragraph at lines 218--220
+\OT1/ptm/m/n/10 Crack-Sort solves this prob-lem by sort-ing the
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 218--220
+\OT1/ptm/m/n/10 fi-nal par-ti-tions as done in adap-tive merg-ing.
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 218--220
+\OT1/ptm/m/n/10 be-hav-ior matches the de-sired one, Crack Sort
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
+
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 223--225
+\OT1/ptm/m/n/10 sig-nif-i-cantly im-prove on adap-tive merg-ing in this
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 223--225
+\OT1/ptm/m/n/10 re-gard. What is more, or-ga-ni-za-tion tech-niques of
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 223--225
+\OT1/ptm/m/n/10 fi-nal par-ti-tions can ex-ploit the ex-tra in-for-ma-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 269--270
 []\OT1/ptm/m/n/8 Idreos, Stratos, Mar-tin L. Ker-sten, and Ste-fan Mane-gold. "
 Self-
  []
@@ -508,15 +596,15 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
+[6] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
 Here is how much of TeX's memory you used:
  3276 strings out of 493029
- 52384 string characters out of 6136235
- 130935 words of memory out of 5000000
+ 52406 string characters out of 6136235
+ 131931 words of memory out of 5000000
  6787 multiletter control sequences out of 15000+600000
  38666 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,23p,1110b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,7n,23p,1127b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/
 texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
@@ -529,11 +617,11 @@ live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (5 pages, 3
-14222 bytes).
+Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (6 pages, 3
+19634 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
