@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  28 MAY 2017 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  28 MAY 2017 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -491,96 +491,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
+<graphics/hsc.png, id=33, 1075.76906pt x 861.9703pt>
+File: graphics/hsc.png Graphic file (type png)
+ <use graphics/hsc.png>
+Package pdftex.def Info: graphics/hsc.png used on input line 192.
+(pdftex.def)             Requested size: 252.0pt x 201.90541pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 200--202
+Underfull \hbox (badness 2205) in paragraph at lines 206--208
 \OT1/ptm/m/n/10 and the fact, that new par-ti-tions re-main un-sorted,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 202--204
+Underfull \hbox (badness 1888) in paragraph at lines 208--210
 \OT1/ptm/m/n/10 sorted par-ti-tions, it still brings more or-der to the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
-\OT1/ptm/m/n/10 Al-though, Crack-Crack al-go-rithm sig-nif-i-cantly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
-
- []
-
-[5]
-Underfull \hbox (badness 1571) in paragraph at lines 218--220
-\OT1/ptm/m/n/10 Crack-Sort solves this prob-lem by sort-ing the
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 218--220
-\OT1/ptm/m/n/10 fi-nal par-ti-tions as done in adap-tive merg-ing.
- []
-
-
-Underfull \hbox (badness 1648) in paragraph at lines 218--220
-\OT1/ptm/m/n/10 be-hav-ior matches the de-sired one, Crack Sort
- []
-
-
+[5 <./graphics/hsc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
+<graphics/hcs.png, id=38, 1072.75781pt x 889.07156pt>
+File: graphics/hcs.png Graphic file (type png)
+ <use graphics/hcs.png>
+Package pdftex.def Info: graphics/hcs.png used on input line 223.
+(pdftex.def)             Requested size: 252.0pt x 208.85045pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+\OT1/ptm/m/n/10 Al-though, Crack-Crack al-go-rithm sig-nif-i-cantly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 223--225
-\OT1/ptm/m/n/10 sig-nif-i-cantly im-prove on adap-tive merg-ing in this
+Underfull \hbox (badness 1571) in paragraph at lines 231--233
+\OT1/ptm/m/n/10 Crack-Sort solves this prob-lem by sort-ing the
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 223--225
-\OT1/ptm/m/n/10 re-gard. What is more, or-ga-ni-za-tion tech-niques of
+Underfull \hbox (badness 3281) in paragraph at lines 231--233
+\OT1/ptm/m/n/10 fi-nal par-ti-tions as done in adap-tive merg-ing.
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 223--225
-\OT1/ptm/m/n/10 fi-nal par-ti-tions can ex-ploit the ex-tra in-for-ma-tion,
+Underfull \hbox (badness 1648) in paragraph at lines 231--233
+\OT1/ptm/m/n/10 be-hav-ior matches the de-sired one, Crack Sort
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--225
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
+ []
 
-Underfull \hbox (badness 1635) in paragraph at lines 269--270
+<graphics/hrr.png, id=39, 1105.88156pt x 861.9703pt>
+File: graphics/hrr.png Graphic file (type png)
+ <use graphics/hrr.png>
+Package pdftex.def Info: graphics/hrr.png used on input line 242.
+(pdftex.def)             Requested size: 252.0pt x 196.40764pt.
+
+[6 <./graphics/hcs.png> <./graphics/hrr.png>]
+Underfull \hbox (badness 1635) in paragraph at lines 288--289
 []\OT1/ptm/m/n/8 Idreos, Stratos, Mar-tin L. Ker-sten, and Ste-fan Mane-gold. "
 Self-
  []
@@ -596,32 +593,34 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
+[7
+
+] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
 Here is how much of TeX's memory you used:
- 3276 strings out of 493029
- 52406 string characters out of 6136235
+ 3291 strings out of 493029
+ 52676 string characters out of 6136235
  131931 words of memory out of 5000000
- 6787 multiletter control sequences out of 15000+600000
+ 6799 multiletter control sequences out of 15000+600000
  38666 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,23p,1127b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/
-texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (6 pages, 3
-19634 bytes).
+ 37i,7n,23p,1131b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (7 pages, 5
+86971 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
