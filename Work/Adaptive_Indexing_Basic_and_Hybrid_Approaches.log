@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  29 MAY 2017 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  29 MAY 2017 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,226 +502,231 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
+
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 200--202
+\OT1/ptm/m/n/10 and the fact, that new par-ti-tions re-main un-sorted,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 202--204
+\OT1/ptm/m/n/10 sorted par-ti-tions, it still brings more or-der to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+
+ []
+
 <graphics/hsc.png, id=33, 1075.76906pt x 861.9703pt>
 File: graphics/hsc.png Graphic file (type png)
  <use graphics/hsc.png>
-Package pdftex.def Info: graphics/hsc.png used on input line 192.
+Package pdftex.def Info: graphics/hsc.png used on input line 210.
 (pdftex.def)             Requested size: 252.0pt x 201.90541pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
-
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 206--208
-\OT1/ptm/m/n/10 and the fact, that new par-ti-tions re-main un-sorted,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
-
- []
-
-[5 <./graphics/hsc.png>]
-Underfull \hbox (badness 1888) in paragraph at lines 208--210
-\OT1/ptm/m/n/10 sorted par-ti-tions, it still brings more or-der to the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
-
- []
-
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-<graphics/hcs.png, id=38, 1072.75781pt x 889.07156pt>
-File: graphics/hcs.png Graphic file (type png)
- <use graphics/hcs.png>
-Package pdftex.def Info: graphics/hcs.png used on input line 223.
-(pdftex.def)             Requested size: 252.0pt x 208.85045pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 \OT1/ptm/m/n/10 Al-though, Crack-Crack al-go-rithm sig-nif-i-cantly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 231--233
+Underfull \hbox (badness 1571) in paragraph at lines 225--227
 \OT1/ptm/m/n/10 Crack-Sort solves this prob-lem by sort-ing the
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 231--233
+Underfull \hbox (badness 3281) in paragraph at lines 225--227
 \OT1/ptm/m/n/10 fi-nal par-ti-tions as done in adap-tive merg-ing.
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 231--233
+Underfull \hbox (badness 1648) in paragraph at lines 225--227
 \OT1/ptm/m/n/10 be-hav-ior matches the de-sired one, Crack Sort
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
-<graphics/hrr.png, id=39, 1105.88156pt x 861.9703pt>
+
+Underfull \vbox (badness 2828) has occurred while \output is active []
+
+
+<graphics/hcs.png, id=37, 1072.75781pt x 889.07156pt>
+File: graphics/hcs.png Graphic file (type png)
+ <use graphics/hcs.png>
+Package pdftex.def Info: graphics/hcs.png used on input line 233.
+(pdftex.def)             Requested size: 252.0pt x 208.85045pt.
+
+<graphics/hrr.png, id=38, 1105.88156pt x 861.9703pt>
 File: graphics/hrr.png Graphic file (type png)
  <use graphics/hrr.png>
-Package pdftex.def Info: graphics/hrr.png used on input line 242.
+Package pdftex.def Info: graphics/hrr.png used on input line 243.
 (pdftex.def)             Requested size: 252.0pt x 196.40764pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./graphics/hcs.png>]
-Underfull \hbox (badness 2384) in paragraph at lines 254--256
+[6 <./graphics/hsc.png> <./graphics/hcs.png>]
+Underfull \hbox (badness 2384) in paragraph at lines 255--257
 \OT1/ptm/m/n/10 Numerous re-searches has shown that adap-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 
-Underfull \hbox (badness 3471) in paragraph at lines 256--258
+Underfull \hbox (badness 3471) in paragraph at lines 257--259
 \OT1/ptm/m/n/10 Adaptive merg-ing seemed to use a dif-fer-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
 \OT1/ptm/m/n/10 ap-proach to reach same goal as database
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 256--258
+Underfull \hbox (badness 3375) in paragraph at lines 257--259
 \OT1/ptm/m/n/10 crack-ing. In con-trast to par-ti-tion-ing, used in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
 \OT1/ptm/m/n/10 Fur-ther-more, adap-tive merg-ing uses an-other
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 256--258
+Underfull \hbox (badness 2020) in paragraph at lines 257--259
 \OT1/ptm/m/n/10 un-der-ly-ing datas-truc-ture to store re-or-ga-ni-za-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
 
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 258--260
+Underfull \hbox (badness 1546) in paragraph at lines 259--261
 \OT1/ptm/m/n/10 As dis-cussed be-fore, dif-fer-ent com-bi-na-tions of
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 258--260
+Underfull \hbox (badness 3724) in paragraph at lines 259--261
 \OT1/ptm/m/n/10 re-or-ga-ni-za-tion tech-niques for ini-tial and fi-nal
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 258--260
+Underfull \hbox (badness 1783) in paragraph at lines 259--261
 \OT1/ptm/m/n/10 par-ti-tions pro-duce hy-brid ap-proaches, some of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 260--262
+Underfull \hbox (badness 2478) in paragraph at lines 261--263
 \OT1/ptm/m/n/10 ap-proaches, ap-ply-ing multi-level merg-ing from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--262
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 265--267
+Underfull \hbox (badness 2671) in paragraph at lines 266--268
 \OT1/ptm/m/n/10 query re-sponse time, worse per-for-mance with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 \OT1/ptm/m/n/10 as vec-tor-ized, side-ways, stochas-tic crack-ing,
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 265--267
+Underfull \hbox (badness 3219) in paragraph at lines 266--268
 \OT1/ptm/m/n/10 from fur-ther re-search. Sev-eral as-pects re-main
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 265--267
+Underfull \hbox (badness 3323) in paragraph at lines 266--268
 \OT1/ptm/m/n/10 un-clear: do hy-brid ap-proaches pro-vide ro-bust
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 267--269
+Underfull \hbox (badness 7012) in paragraph at lines 268--270
 \OT1/ptm/m/n/10 Previously pre-sented hy-brid ap-proaches were
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 267--269
+Underfull \hbox (badness 4303) in paragraph at lines 268--270
 \OT1/ptm/m/n/10 and Radix-Clustering. How-ever, this ap-proach
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--269
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
 
-Underfull \hbox (badness 6110) in paragraph at lines 269--271
+Underfull \hbox (badness 6110) in paragraph at lines 270--272
 \OT1/ptm/m/n/10 crack-ing and adap-tive merg-ing use dif-fer-ent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 \OT1/ptm/m/n/10 un-der-ly-ing struc-tures to store re-or-ga-ni-za-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 \OT1/ptm/m/n/10 uses par-ti-tioned B-Trees. The in-flu-ences of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 \OT1/ptm/m/n/10 these datas-truc-tures on the per-for-mance of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
@@ -729,7 +734,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--271
 Underfull \vbox (badness 6396) has occurred while \output is active []
 
  [7 <./graphics/hrr.png>]
-Underfull \hbox (badness 1635) in paragraph at lines 314--315
+Underfull \hbox (badness 1635) in paragraph at lines 315--316
 []\OT1/ptm/m/n/8 Idreos, Stratos, Mar-tin L. Ker-sten, and Ste-fan Mane-gold. "
 Self-
  []
@@ -772,7 +777,7 @@ are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
 Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (8 pages, 5
-95252 bytes).
+95160 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

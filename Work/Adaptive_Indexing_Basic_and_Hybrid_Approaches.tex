@@ -187,12 +187,6 @@ Like in database cracking, some data structure is required to retain information
 \label{sec:hybrid}
 In the previous sections, we revisited two fundamental approaches for adaptive indexing: database cracking and adaptive merging. In this section we present further approaches that try to combine strength of both database cracking and adaptive merging. In Subsection~\ref{subsec:hybrid_motiv} we discuss the main idea behind hybrid methods. Later, in Subsection~\ref{subsec:hybrid_strat}, we review main components of an algorithm for adaptive indexing and discuss how these components can be combined to develop a hybrid algorithm for adaptive indexing. To conclude this section, we present existing hybrid approaches followed by examples to provide better understanding of the concept.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=\columnwidth]{hsc.png}
-\caption{Hybrid Sort-Sort Algorithm}
-\end{figure}
-
 \subsection{Motivation}
 \label{subsec:hybrid_motiv}
 In previous sections, we revealed two key criteria that adaptive indexing algorithms are judged by: (1) initialization costs for the first query and (2) the number of queries needed to reach the performance of a perfect (full) index. As for (1), it is desired that the initialization does not require more costs than a full scan. And as for (2), one wants to converge towards full index as fast as possible, while performing lightweighted operations during query processing. Based on analysis of database cracking and adaptive merging, we find the strengths of cracking and merging complementary. Database cracking performs lightweighted partitioning to keep initialization costs low, but requires a lot of time to reach the performance of a full index. On the other hand, adaptive merging aims to achieve the behavior of a full index as fast as possible while performing costly operation of sorting both while loading the data into initial and final partitions \cite{hybrid}. In the next subsection, we reveal the sources of their strength and how they can be combined.
@@ -211,18 +205,18 @@ In contrast to sorting, this way of partition organization is more lightweighted
 
 \textbf{Hybrid Algorithm Design}. Each of the mentioned organization techniques can be applied both to the initial and final partitions. Consequently, nine potential combinations can be created: starting with Sort-Sort (which is adaptive merging) and ending by Crack-Crack (which is a slight modification of database cracking) \cite{hybrid}.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\columnwidth]{hsc.png}
+\caption{Hybrid Sort-Sort Algorithm}
+\end{figure}
+
 \subsection{Hybrid Algorithms}
 \label{subsec:hybrid_algo}
 After presenting the design of hybrid algorithms, we will review nine existing approaches and present some of them in Figures 4, 5, and 6. Furthermore, we will try to narrow the research field to a couple of algorithms that promise improvements on the current adaptive indexing algorithms and discuss their key properties.
 \begin{enumerate}
 \item{Sort-* Algorithms:} \\
 Fully sorting the initial partition is the reason why overhead for initial run is so high by adaptive merging. In fact, sorting takes about 80\% of the time of the first query processing \cite{hybrid}. As a result, none of 3 algorithms (Sort-Sort, Sort-Radix, Sort-Crack) will provide the desired behavior, specifically low initialization costs.\\
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\columnwidth]{hcs.png}
-\caption{Hybrid Crack-Sort Algorithm}
-\end{figure}
 
 \item{Crack-* Algorithms:}
 \begin{itemize}
@@ -233,6 +227,13 @@ Crack-Sort solves this problem by sorting the final partitions as done in adapti
 \item{Crack-Radix:}\\
 This hybrid approach achieves balanced behavior between the previous hybrids. It achieves similar performance as Crack-Crack at the beginning of the workload and similarly to Crack-Sort it achieves a significant boost in performance. Although it does not achieve the performance of adaptive merging of Crack-Sort, Crack-Radix still significantly improves over plain cracking. Thus, Crack-Radix achieves a nice balance between database cracking and adaptive merging.\\
 \end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\columnwidth]{hcs.png}
+\caption{Hybrid Crack-Sort Algorithm}
+\end{figure}
+
 \item{Radix-* Algorithms:}\\
 Although costs for first couple of queries for this group of hybrid approaches are slightly higher than the ones of Crack-* approaches, Radix-* approaches significantly improve on adaptive merging in this regard. What is more, organization techniques of final partitions can exploit the extra information provided by clustering to quickly place relevant values. This helps Radix-* approaches to come closer to the convergence behavior of adaptive merging.
 \end{enumerate}
