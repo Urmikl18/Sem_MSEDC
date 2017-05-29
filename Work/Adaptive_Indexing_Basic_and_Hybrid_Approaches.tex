@@ -17,7 +17,7 @@
 So to his mind was young Leander's look}{\textit{Christopher Marlowe\\Hero and Leander, 1593}}
 
 \begin{abstract}
-What did I do in a nutshell?\\
+Database indexes have been used in database systems for a long time. They provide necessary functionality to quickly access relevant tuples of data. In this paper, we review an advanced indexing concept, known as \emph{adaptive indexing}, which promotes the idea that index creation is a part of query processing. We revisit basic approaches for adaptive indexing: \emph{database cracking} and \emph{adaptive indexing}. We discuss issues of these methods and review proposed modifications, known as \emph{hybrid approaches} that combine strengh of both approaches. As a result, we provide a complete overview of the core concepts of adaptive indexing, lay down some background for further research and outline issues that remain unsolved.\\
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -209,11 +209,11 @@ As used in database cracking, this organization step requires minimal investment
 In contrast to sorting, this way of partition organization is more lightweighted which helps to reduce organization costs. Although, radix-clustering doesn't produce fully sorted partitions, it still brings more order to the partitions than cracking.\\
 \end{itemize}
 
-\textbf{Hybrid Algorithm Design}. Each of the mentioned organization techniques can be applied both to the initial and final partitions. Consequently, 9 potential combinations can be created: starting with Sort-Sort (which is adaptive merging) and ending by Crack-Crack (which is a slight modification of database cracking) \cite{hybrid}.
+\textbf{Hybrid Algorithm Design}. Each of the mentioned organization techniques can be applied both to the initial and final partitions. Consequently, nine potential combinations can be created: starting with Sort-Sort (which is adaptive merging) and ending by Crack-Crack (which is a slight modification of database cracking) \cite{hybrid}.
 
 \subsection{Hybrid Algorithms}
 \label{subsec:hybrid_algo}
-After presenting the design of hybrid algorithms, we will review 9 existing approaches and present some of them in Figures 4, 5, and 6. Furthermore, we will try to narrow the research field to a couple of algorithms that promise improvements on the current adaptive indexing algorithms and discuss their key properties.
+After presenting the design of hybrid algorithms, we will review nine existing approaches and present some of them in Figures 4, 5, and 6. Furthermore, we will try to narrow the research field to a couple of algorithms that promise improvements on the current adaptive indexing algorithms and discuss their key properties.
 \begin{enumerate}
 \item{Sort-* Algorithms:} \\
 Fully sorting the initial partition is the reason why overhead for initial run is so high by adaptive merging. In fact, sorting takes about 80\% of the time of the first query processing \cite{hybrid}. As a result, none of 3 algorithms (Sort-Sort, Sort-Radix, Sort-Crack) will provide the desired behavior, specifically low initialization costs.\\
@@ -245,17 +245,43 @@ Although costs for first couple of queries for this group of hybrid approaches a
 
 \textbf{Summary.} Crack-* and Radix-* algorithms show promising results. Crack-* methods approach desired behavior by minimizing the costs of initial run by using lightweighted operations of cracking and keeping fast convergence of adaptive merging. Radix-* approaches achieve this goal from other angle: although they use a more expensive operation of clustering to create initial partitions, the information about created clusters help to minimize the costs for organizing final partitions.
 
-\section{Evaluation}
+\section{Lessons Learned \& Future Work}
 \label{sec:eval}
-Point out complementary nature of cracking and merging. Compare to other hybrid approaches. Speculate on future and usage of the methods
+In this section we will put together the major lessons learned in this paper and outline further interesting research possibilities.
+\begin{itemize}
+\item{\textbf{Lessons Learned}}
+\begin{enumerate}
+\item{Adaptive Indexing Is a Promising Concept:}\\
+Numerous researches has shown that adaptive indexing is a valid alternative to the state-of-art in database indexing. Adaptive approaches tackle numerous indexing issues like growing workload, unpredictable behavior of the user, while using rather simple concepts. Various independent studies have shown that database cracking is repeatable and can be integrated in existing DBMSs, while making straight-forward changes \cite{cracking}.\\
+\item{Database Cracking and Adaptive Merging Have Similar Nature:}\\
+Adaptive merging seemed to use a differing approach to reach same goal as database cracking. In contrast to partitioning, used in cracking, it uses merging to create final partitions. Furthermore, adaptive merging uses another underlying datastructure to store reorganization progress (partitioned B-Tree in contrast to AVL-Tree). However, as shown in \cite{hybrid}, adaptive merging and database cracking have much in common and their complementary nature can be used to develop further approaches for adaptive indexing.\\
+\item{Crack-Sort and Crack-Radix Are Valid Alternatives:}\\
+As discussed before, different combinations of reorganization techniques for initial and final partitions produce hybrid approaches, some of which are valid alternatives to database cracking and adaptive merging. While Sort-* approaches have proved to be rather inefficient and do not reach desired behavior, Crack-* approaches provide a nice balance between cracking and adaptive merging and utilize strength of both approaches. Especially, Crack-Sort and Crack-Radix, both of which have the lighweighted initialization of database cracking and rapid convergence of adaptive merging. Both approaches can be used depending on the task: Crack-Radix can be used to provide a more smooth convergence, while Crack-Sort can be used when fast adaptation is needed.\\
+\item{Hybrid Algorithms Can Be Combined:}\\
+Presented hybrid algorithms can be optimized, e.g. by finding optimal clustering degree for Radix-* approaches, applying multi-level merging from adaptive merging. Another promising optimization possibility is to provide a functionality to combine various hybrid approaches \cite{hybrid}. For example, Crack-Radix can be used for first part of the workload as it provides a rather smooth adaption behavior, never being slower than a full scan. Later, Crack-Sort can be used to force eager index optimization.\\
+\end{enumerate}
+\item{\textbf{Future Work}}
+\begin{enumerate}
+\item{Further Research on Adaptive Merging and Hybrid Approaches Needed:}\\
+Database cracking has been thoroughly studied and numerous issues of this approach have been found: slow convergence towards full index, unpredictable query response time, worse performance with growing number of projected attributes, and not suitable implementation for block-access storage. These open questions motivated further research and development of modificated approaches such as vectorized, sideways, stochastic cracking, and hybrid approaches. We think that adaptive merging and other hybrid approaches can benefit from further research. Several aspects remain unclear: do hybrid approaches provide robust tuple reconstruction; how sensitive are they to different query patterns; how can these methods be combined with modern indexing trends like \emph{sorting radix sort} or \emph{Adaptive Radix Trees} \cite{art}? \\
+\item{New Strategies for Hybrid Algorithms:}\\
+Previously presented hybrid approaches were constructed by following same strategy: load data into initial and final partitions following one of three organization techniques: Sorting, Cracking, and Radix-Clustering. However, this approach restricts the number of possible hybrids. It is possible, that hybrid approaches constructed using other techniques can produce better results.\\
+\item{Influence of Underlying Datastructures:}\\
+In previous sections, we discussed that database cracking and adaptive merging use different underlying structures to store reorganization progress: the former uses AVL-Tree, the latter uses partitioned B-Trees. The influences of these datastructures on the performance of respective algorithms has not been studied yet. The introduction of new indexing datastructures, such as Adaptive Radix Trees or Self Pruning Splay Trees \cite{spst}, promise siginificant improvement in performance for database cracking. Both of these datastructures enable faster lookup. However, their compatibility with adaptive merging and hybrid approaches remain unclear.\\
+\item{Integration of Adaptive Indexing in Other Models:}\\
+Adaptive indexing has nice background to be used in column-oriented databases. However, the aspects of adaptive indexing in other database architectures remain unclear. Some modifications have been proposed to make database cracking usable in row-oriented databases \cite{cracking}. However, this direction has not been further researched. Same applies to other database architectures, such as graph databases. Modifications required to use other methods for adaptive indexing, like hybrid methods of adaptive merging, have to be researched.
+\end{enumerate}
+\end{itemize}
 
-\section{Related Work}
-\label{sec:rel}
-Some research on related work has to be done.
+%\section{Related Work}
+%\label{sec:rel}
+%Some research on related work has to be done.
 
 \section{Conclusions}
 \label{sec:conc}
-What did I find out?
+In this paper we introduced the concept of adaptive indexing. We discussed \emph{partial} and \emph{soft} indexes that provide background for adaptive indexing. We revisited two fundamental approaches for adaptive indexing: \emph{database cracking} and \emph{adaptive merging}. Furthermore, we showed, how strength of these methods can be combined to develop \emph{hybrid approaches} that try to reach the performance of a perfect hybrid: lightweighted initialization and fast convergence towards full index.
+
+We hope that this paper will give necessary background information on adaptive indexing and motivates further research in this field of database technologies.
 
 \section*{Acknowledgement}
 I thank Gabriel Campero Durand of Otto-von-Guericke-University, Magdeburg for providing insight and expertise to start this research and for his enormous support throughout the whole process of research, writing and evaluation of this scientific work. I would also like to show my gratitude to the DBSE Research Group of Otto-von-Guericke-University, Magdeburg for making this work possible and organising the ``Seminar on Modern Software Engineering and Database Concepts'', during which this research took place.
@@ -288,6 +314,11 @@ Idreos, Stratos, Stefan Manegold, and Goetz Graefe. "Adaptive indexing in modern
 Idreos, Stratos, Martin L. Kersten, and Stefan Manegold. "Self-organizing tuple reconstruction in column-stores." Proceedings of the 2009 ACM SIGMOD International Conference on Management of data. ACM, 2009.
 \bibitem{stochastic}
 Halim, Felix, et al. "Stochastic database cracking: Towards robust adaptive indexing in main-memory column-stores." Proceedings of the VLDB Endowment 5.6 (2012): 502-513.
+\bibitem{art}
+V. Leis et al. "The Adaptive Radix Tree: ARTful Indexing for
+Main-Memory Databases." In ICDE, 2013.
+\bibitem{spst}
+Holanda, Pedro Thiago Timbó. "SPST-Index: a self pruning splay tree index for database cracking.", 2017.
 
 \end{thebibliography}
 

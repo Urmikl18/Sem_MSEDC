@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  28 MAY 2017 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  29 MAY 2017 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,8 +267,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 17.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 45.
 
+
+LaTeX Warning: Reference `sec:rel' on page 1 undefined on input line 34.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 45.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -276,6 +279,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 []\OT1/pcr/m/n/10 CREATE   INDEX   ON
  []
 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 48.
 
@@ -288,10 +295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 \OT1/ptm/m/n/10 re-la-tion (col-umn) while ap-ply-ing some se-lec-tion
  []
@@ -301,12 +305,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<graphics/partial.png, id=14, 889.82437pt x 371.88937pt>
+<graphics/partial.png, id=10, 889.82437pt x 371.88937pt>
 File: graphics/partial.png Graphic file (type png)
 
 <use graphics/partial.png>
 Package pdftex.def Info: graphics/partial.png used on input line 62.
 (pdftex.def)             Requested size: 252.0pt x 105.31996pt.
+
+Underfull \vbox (badness 1331) has occurred while \output is active []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
@@ -327,7 +334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-
+[2 <./graphics/partial.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
@@ -337,7 +344,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-[2 <./graphics/partial.png>]
+
 Underfull \hbox (badness 1521) in paragraph at lines 99--101
 \OT1/ptm/m/n/10 As fur-ther queries on at-tribute $\OML/cmm/m/it/10 A$ \OT1/ptm
 /m/n/10 ar-rive, par-ti-tion
@@ -364,12 +371,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
-<graphics/cracking.png, id=21, 1036.62282pt x 792.71156pt>
+<graphics/cracking.png, id=20, 1036.62282pt x 792.71156pt>
 File: graphics/cracking.png Graphic file (type png)
 
 <use graphics/cracking.png>
 Package pdftex.def Info: graphics/cracking.png used on input line 109.
 (pdftex.def)             Requested size: 252.0pt x 192.69801pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Underfull \hbox (badness 1917) in paragraph at lines 115--117
 []\OT1/ptm/b/n/10 Analysis\OT1/ptm/m/n/10 . In or-der to an-a-lyze database cra
@@ -402,7 +413,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--120
  []
 
 
-Underfull \vbox (badness 1406) has occurred while \output is active []
+Underfull \vbox (badness 4556) has occurred while \output is active []
 
  [3 <./graphics/cracking.png>]
 Underfull \hbox (badness 7667) in paragraph at lines 135--136
@@ -471,7 +482,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--178
 
  []
 
-
+[4 <./graphics/merging.png>]
 Underfull \hbox (badness 2111) in paragraph at lines 179--180
 []\OT1/ptm/m/n/10 Sorted par-ti-tions: Sorted par-ti-tions in adap-tive
  []
@@ -481,7 +492,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-[4 <./graphics/merging.png>]
+
 Underfull \hbox (badness 2326) in paragraph at lines 181--182
 \OT1/ptm/m/n/10 databases, adap-tive merg-ing en-ables adap-tive in-dex
  []
@@ -515,7 +526,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
  []
 
-
+[5 <./graphics/hsc.png>]
 Underfull \hbox (badness 1888) in paragraph at lines 208--210
 \OT1/ptm/m/n/10 sorted par-ti-tions, it still brings more or-der to the
  []
@@ -525,7 +536,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
  []
 
-[5 <./graphics/hsc.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
@@ -576,12 +587,155 @@ File: graphics/hrr.png Graphic file (type png)
 Package pdftex.def Info: graphics/hrr.png used on input line 242.
 (pdftex.def)             Requested size: 252.0pt x 196.40764pt.
 
-[6 <./graphics/hcs.png> <./graphics/hrr.png>]
-Underfull \hbox (badness 1635) in paragraph at lines 288--289
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./graphics/hcs.png>]
+Underfull \hbox (badness 2384) in paragraph at lines 254--256
+\OT1/ptm/m/n/10 Numerous re-searches has shown that adap-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
+
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 256--258
+\OT1/ptm/m/n/10 Adaptive merg-ing seemed to use a dif-fer-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+\OT1/ptm/m/n/10 ap-proach to reach same goal as database
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 256--258
+\OT1/ptm/m/n/10 crack-ing. In con-trast to par-ti-tion-ing, used in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+\OT1/ptm/m/n/10 Fur-ther-more, adap-tive merg-ing uses an-other
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 256--258
+\OT1/ptm/m/n/10 un-der-ly-ing datas-truc-ture to store re-or-ga-ni-za-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 258--260
+\OT1/ptm/m/n/10 As dis-cussed be-fore, dif-fer-ent com-bi-na-tions of
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 258--260
+\OT1/ptm/m/n/10 re-or-ga-ni-za-tion tech-niques for ini-tial and fi-nal
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 258--260
+\OT1/ptm/m/n/10 par-ti-tions pro-duce hy-brid ap-proaches, some of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 260--262
+\OT1/ptm/m/n/10 ap-proaches, ap-ply-ing multi-level merg-ing from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
+
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 265--267
+\OT1/ptm/m/n/10 query re-sponse time, worse per-for-mance with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+\OT1/ptm/m/n/10 as vec-tor-ized, side-ways, stochas-tic crack-ing,
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 265--267
+\OT1/ptm/m/n/10 from fur-ther re-search. Sev-eral as-pects re-main
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 265--267
+\OT1/ptm/m/n/10 un-clear: do hy-brid ap-proaches pro-vide ro-bust
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 267--269
+\OT1/ptm/m/n/10 Previously pre-sented hy-brid ap-proaches were
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 267--269
+\OT1/ptm/m/n/10 and Radix-Clustering. How-ever, this ap-proach
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
+
+ []
+
+
+Underfull \hbox (badness 6110) in paragraph at lines 269--271
+\OT1/ptm/m/n/10 crack-ing and adap-tive merg-ing use dif-fer-ent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+\OT1/ptm/m/n/10 un-der-ly-ing struc-tures to store re-or-ga-ni-za-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+\OT1/ptm/m/n/10 uses par-ti-tioned B-Trees. The in-flu-ences of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+\OT1/ptm/m/n/10 these datas-truc-tures on the per-for-mance of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+
+ []
+
+
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+ [7 <./graphics/hrr.png>]
+Underfull \hbox (badness 1635) in paragraph at lines 314--315
 []\OT1/ptm/m/n/8 Idreos, Stratos, Mar-tin L. Ker-sten, and Ste-fan Mane-gold. "
 Self-
  []
 
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ³ in font ptmr7t!
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -593,34 +747,35 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
+[8] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux)
 
-] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3291 strings out of 493029
- 52676 string characters out of 6136235
- 131931 words of memory out of 5000000
- 6799 multiletter control sequences out of 15000+600000
+ 3293 strings out of 493029
+ 52687 string characters out of 6136235
+ 131928 words of memory out of 5000000
+ 6801 multiletter control sequences out of 15000+600000
  38666 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,23p,1131b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/te
-xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (7 pages, 5
-86971 bytes).
+ 37i,7n,23p,1131b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (8 pages, 5
+95230 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
