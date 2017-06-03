@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  3 JUN 2017 12:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.7)  3 JUN 2017 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -387,6 +387,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
  []
 
 
+Underfull \hbox (badness 2285) in paragraph at lines 119--120
+\OT1/ptm/m/n/10 After be-ing cre-ated, the full in-dex pro-cesses new
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 119--120
+\OT1/ptm/m/n/10 The full scan takes on av-er-age the same time to
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
@@ -508,8 +518,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--203
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 203--205
-\OT1/ptm/m/n/10 sorted par-ti-tions, it still brings more or-der to the
+Underfull \hbox (badness 3690) in paragraph at lines 203--205
+\OT1/ptm/m/n/10 costs. Al-though, radix-clustering does not pro-duce
  []
 
 
@@ -523,6 +533,16 @@ File: graphics/hsc.png Graphic file (type png)
  <use graphics/hsc.png>
 Package pdftex.def Info: graphics/hsc.png used on input line 211.
 (pdftex.def)             Requested size: 252.0pt x 201.90541pt.
+
+Underfull \hbox (badness 1371) in paragraph at lines 219--221
+\OT1/ptm/m/n/10 of 3 al-go-rithms (Sort-Sort, Sort-Radix, Sort-Crack)
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 219--221
+\OT1/ptm/m/n/10 will pro-vide the de-sired be-hav-ior, specif-i-cally low
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
@@ -539,18 +559,18 @@ Underfull \hbox (badness 1571) in paragraph at lines 226--228
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 226--228
-\OT1/ptm/m/n/10 al-lows the al-go-rithm to achieve sim-i-lar costs
- []
-
-
-Underfull \hbox (badness 1648) in paragraph at lines 226--228
-\OT1/ptm/m/n/10 be-hav-ior matches the de-sired one, Crack Sort
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 228--230
+\OT1/ptm/m/n/10 per-for-mance as Crack-Crack at the be-gin-ning
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 228--230
+\OT1/ptm/m/n/10 Crack-Radix achieves a nice bal-ance be-tween
  []
 
 
@@ -574,8 +594,8 @@ Package pdftex.def Info: graphics/hrr.png used on input line 244.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6 <./graphics/hsc.png> <./graphics/hcs.png>]
-Underfull \hbox (badness 2384) in paragraph at lines 256--258
-\OT1/ptm/m/n/10 Numerous re-searches has shown that adap-tive
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+\OT1/ptm/m/n/10 Previous re-search has shown that adap-tive
  []
 
 
@@ -629,18 +649,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--262
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 262--264
-\OT1/ptm/m/n/10 ap-proaches, ap-ply-ing multi-level merg-ing from
+Underfull \hbox (badness 1629) in paragraph at lines 262--264
+\OT1/ptm/m/n/10 Presented hy-brid al-go-rithms can be op-ti-mized,
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 262--264
+\OT1/ptm/m/n/10 e.g. by find-ing the op-ti-mal clus-ter-ing de-gree
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 262--264
 
- []
-
-
-Underfull \hbox (badness 2671) in paragraph at lines 267--269
-\OT1/ptm/m/n/10 query re-sponse time, worse per-for-mance with
  []
 
 
@@ -717,6 +737,9 @@ Underfull \hbox (badness 1609) in paragraph at lines 275--277
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1635) in paragraph at lines 314--315
 []\OT1/ptm/m/n/8 Idreos, Stratos, Mar-tin L. Ker-sten, and Ste-fan Mane-gold. "
 Self-
@@ -724,6 +747,7 @@ Self-
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ³ in font ptmr7t!
+[8]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -735,32 +759,34 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
+[9
+
+] (./Adaptive_Indexing_Basic_and_Hybrid_Approaches.aux) ) 
 Here is how much of TeX's memory you used:
  3292 strings out of 493029
  52678 string characters out of 6136235
- 131928 words of memory out of 5000000
+ 132928 words of memory out of 5000000
  6800 multiletter control sequences out of 15000+600000
  38666 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,23p,1203b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/
-texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (8 pages, 5
-18159 bytes).
+ 37i,7n,23p,1199b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on Adaptive_Indexing_Basic_and_Hybrid_Approaches.pdf (9 pages, 5
+18530 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
