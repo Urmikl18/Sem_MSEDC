@@ -8,7 +8,7 @@
 
 \begin{document}
 
-\title{Adaptive Indexing: the Compromise Between Lazy but Lightweight Cracking and Eager but Expensive Merging}
+\title{Adaptive Indexing: between Lazy but Lightweight Cracking and Eager but Expensive Merging}
 \author{Pavlo Shevchenko \\ Otto-von-Guericke-University, Magdeburg \\ pavlo.shevchenko@st.ovgu.de}
 
 \maketitle
@@ -182,7 +182,7 @@ Like in database cracking, some data structure is required to retain information
 \item{Block-Access Storage:} \\ In contrast to database cracking, designed for in-memory databases, adaptive merging enables adaptive index creation in large data warehouses on external storages. Similarly to traditional B-trees and external merge sort, adaptive merging can be applied to partitioned B-trees and used in a block-access storage \cite{merging}. \\
 \end{itemize}
 
-\textbf{Issues}. Although adaptive merging matches and may even outperform the query response time of a full index after a small number of queries, its performance over the first queries is concerning. While database cracking matches the scan performance with the second query and exceeds it after the third, adaptive merging needs around 7 queries to exceed the scan time. The first query may be nearly 5 times slower than a scan \cite{hybrid}.
+\textbf{Criticism}. Although adaptive merging matches and may even outperform the query response time of a full index after a small number of queries, its performance over the first queries is concerning. While database cracking matches the scan performance with the second query and exceeds it after the third, adaptive merging needs around 7 queries to exceed the scan time. The first query may be nearly 5 times slower than a scan \cite{hybrid}.
 
 \section{Hybrid Approaches}
 \label{sec:hybrid}
@@ -265,7 +265,7 @@ Presented hybrid algorithms can be optimized, e.g. by finding the optimal cluste
 \item{\textbf{Future Work}}
 \begin{enumerate}
 \item{Further Research on Adaptive Merging and Hybrid Approaches Needed:}\\
-Database cracking has been thoroughly studied and numerous issues of this approach have been found: slow convergence towards full index, unpredictable query response time, worse performance with a growing number of projected attributes, and not suitable implementation for a block-access storage. These open questions motivated further research and development of modificated approaches such as vectorized, sideways, stochastic cracking, and hybrid approaches. We think that adaptive merging and other hybrid approaches can benefit from further research. Several aspects remain unclear: do hybrid approaches provide robust tuple reconstruction; how sensitive are they to different query patterns; how can these methods be combined with modern indexing trends like \emph{sorting radix sort} or \emph{Adaptive Radix Trees} \cite{art}? \\
+Database cracking has been thoroughly studied and numerous issues of this approach have been found: slow convergence towards full index, unpredictable query response time, worse performance with a growing number of projected attributes, and not suitable implementation for a block-access storage. These open questions motivated further research and development of modificated approaches such as vectorized, sideways, stochastic cracking, and hybrid approaches. We think that adaptive merging and other hybrid approaches can benefit from further research. Several aspects remain unclear: do hybrid approaches provide robust tuple reconstruction or how sensitive are they to different query patterns? \\
 \item{New Strategies for Hybrid Algorithms:}\\
 Previously presented hybrid approaches were constructed by following same strategy: load data into initial and final partitions following one of the three organization techniques: Sorting, Cracking, and Radix-Clustering. However, this approach restricts the number of possible hybrids. It is possible, that hybrid approaches constructed using other techniques can produce better results.\\
 \item{Influence of Underlying Data Structures:}\\
@@ -279,7 +279,7 @@ Further research can cover the possibilities to integrate adaptive indexing into
 
 \section{Conclusions}
 \label{sec:conc}
-In this paper we introduced the concept of adaptive indexing. We discussed \emph{partial} and \emph{soft} indexes that provide the background for adaptive indexing. We revisited two fundamental approaches for adaptive indexing: \emph{database cracking} and \emph{adaptive merging}. Furthermore, we showed, how the strengths of these methods can be combined to develop \emph{hybrid approaches} that try to reach the performance of a perfect hybrid: lightweight initialization and fast convergence towards a full index.
+In this paper we reviewed the concept of adaptive indexing. We discussed \emph{partial} and \emph{soft} indexes that provide the background for adaptive indexing. We revisited two fundamental approaches for adaptive indexing: \emph{database cracking} and \emph{adaptive merging}. Furthermore, we showed, how the strengths of these methods can be combined to develop \emph{hybrid approaches} that try to reach the performance of a perfect hybrid: lightweight initialization and fast convergence towards a full index.
 
 We hope that this paper will give necessary background information on adaptive indexing and motivate further research into these methods and their usability in databases and data-intensive applications.
 
