@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Overview of Indexing}{3}{0}{1}
+\beamer@sectionintoc {2}{Definition of Adaptive Indexing}{8}{0}{2}
+\beamer@sectionintoc {3}{Goal}{9}{0}{3}
+\beamer@sectionintoc {4}{Background}{14}{0}{4}
+\beamer@sectionintoc {5}{Adaptive Indexing}{20}{0}{5}
+\beamer@subsectionintoc {5}{1}{Database Cracking}{24}{0}{5}
+\beamer@subsectionintoc {5}{2}{Adaptive Merging}{26}{0}{5}
+\beamer@subsectionintoc {5}{3}{Hybrid Approaches}{28}{0}{5}
+\beamer@sectionintoc {6}{Lessons Learned}{37}{0}{6}
+\beamer@sectionintoc {7}{Future Work}{38}{0}{7}
