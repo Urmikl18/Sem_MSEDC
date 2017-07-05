@@ -32,7 +32,7 @@
 \textbf{Database Indexes:}
 \begin{itemize}
 \item{help to decrease the query response time;}
-\item{sorted column of data with references to the original records;}
+\item{structure optimized for search with references to original entries;}
 \item{precalculated before the first query arrives (\emph{offline indexing});}
 \item{used to be stored on disk in the form of B-Trees.}
 \end{itemize}
@@ -71,12 +71,16 @@ Study the \emph{evolution} of adaptive indexing: \pause
 \section{Background}
 \begin{frame}
 \frametitle{Background. Partial Index}
+\begin{figure}
+\centering
 \includegraphics[width=\textwidth]{graphics/partial.png}
+\caption{Full Index and Partial Index [1]}
+\end{figure}
 \end{frame}
 
 \begin{frame}
 \frametitle{Background. Soft Index}
-In contrast to \emph{hard indexes}, which are created and managed by DBA, \emph{soft indexes} are created, modified and dropped by a DBMS.\\ \pause
+In contrast to \emph{hard indexes}, which are created and managed by DBA, \emph{soft indexes} are created, modified and dropped by a DBMS [2].\\ \pause
 \vspace{0.5cm}\textbf{Workflow:} \pause
 \begin{enumerate}
 \item{Collect information about the current state of a system.} \pause
@@ -90,19 +94,19 @@ In contrast to \emph{hard indexes}, which are created and managed by DBA, \emph{
 \frametitle{Approaches for Adaptive Indexing}
 \textbf{Goal:} provide fast access to the data and the self-organized behavior of a database system. \pause
 \begin{enumerate}
-\item{Database Cracking:}
+\item{Database Cracking [3]:}
 \begin{itemize}
 \item{index maintenance is a byproduct of query processing;}
 \item{continuous physical reorganization (\textit{cracking} database into manageable pieces).}
 \end{itemize}
 \pause
-\item{Adaptive Merging:}
+\item{Adaptive Merging [4]:}
 \begin{itemize}
 \item{adaptive nature of cracking;}
 \item{better query response time and quicker adaption.}
 \end{itemize}
 \pause
-\item{Hybrid Approaches:}
+\item{Hybrid Approaches [5]:}
 \begin{itemize}
 \item{combine strength of \emph{database cracking} and \emph{adaptive merging}.}
 \end{itemize}
@@ -113,18 +117,22 @@ In contrast to \emph{hard indexes}, which are created and managed by DBA, \emph{
 \begin{frame}
 \frametitle{Database Cracking}
 \textbf{Main Idea: } incrementally perform quicksort on a copy of a column using crack-in-three or crack-in-two. \pause
-\begin{center}
-\includegraphics[width=\linewidth, height=6cm, keepaspectratio]{graphics/cracking.png}
-\end{center}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth, height=5cm, keepaspectratio]{graphics/cracking.png}
+\caption{Cracking a column.}
+\end{figure}
 \end{frame}
 
 \subsection{Adaptive Merging}
 \begin{frame}
 \frametitle{Adaptive Merging}
 \textbf{Main Idea: }incrementally merge sort the relevant key ranges till a single sorted partition is created. \pause
-\begin{center}
-\includegraphics[width=\linewidth, height=6cm, keepaspectratio]{graphics/merging.png}
-\end{center}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth, height=5cm, keepaspectratio]{graphics/merging.png}
+\caption{Example for adaptive merging.}
+\end{figure}
 \end{frame}
 
 \subsection{Hybrid Approaches}
@@ -159,7 +167,7 @@ In contrast to \emph{hard indexes}, which are created and managed by DBA, \emph{
 \end{frame}
 
 \begin{frame}
-\frametitle{Database Cracking vs. Adaptive Merging}
+\frametitle{Database Cracking vs. Adaptive Merging \footnote{experimental data taken from [5]}}
 \begin{tabular}{| M{0.2\linewidth} | M{0.35\linewidth} | M{0.35\linewidth} |}
 \hline 
  & \textbf{Database Cracking} & \textbf{Adaptive Merging} \\ 
@@ -184,14 +192,14 @@ In contrast to \emph{hard indexes}, which are created and managed by DBA, \emph{
 \item{load data into final partitions.}
 \end{itemize}
 \pause
-\item{How to make components \textit{strong}?}
+\item{How to make components better?}
 \begin{itemize}
 \item{Crack;}
 \item{Sort;}
 \item{Radix.}
 \end{itemize}
 \pause
-\item{Combine \textit{strong} components}
+\item{Combine the best components}
 \begin{itemize}
 \item{Sort-*;}
 \item{Crack-*;}
@@ -202,24 +210,30 @@ In contrast to \emph{hard indexes}, which are created and managed by DBA, \emph{
 
 \begin{frame}
 \frametitle{Crack-Sort Algorithm}
+\begin{figure}
 \centering
-\includegraphics[height=0.9\textheight , keepaspectratio]{graphics/hcs.png}
+\includegraphics[height=6cm , keepaspectratio]{graphics/hcs.png}
+\caption{Hybrid Crack-Sort Algorithm.}
+\end{figure}
+
 \end{frame}
 
-%\begin{frame}
-%\frametitle{Radix-Radix Algorithm}
-%\centering
-%\includegraphics[height=0.9\textheight , keepaspectratio]{graphics/hrr.png}
-%\end{frame}
+\begin{frame}
+\frametitle{Radix-Radix Algorithm}
+\begin{figure}
+\centering
+\includegraphics[height=6cm , keepaspectratio]{graphics/hrr.png}
+\caption{Hybrid Radix-Radix Algorithm.}
+\end{figure}
+\end{frame}
 
 \section{Lessons Learned}
 \begin{frame}
 \frametitle{Lessons Learned}
 \begin{itemize}
 \item{Adaptive Indexing Is a Promising Concept;}
-\item{Database Cracking and Adaptive Merging Have Similar Nature;}
-\item{Crack-Sort and Crack-Radix Are Valid Alternatives;}
-\item{Hybrid Algorithms Can Be Combined.}
+\item{Database Cracking and Adaptive Merging Have Similar Nature;}\item{Crack-Sort and Crack-Radix Are Promising Alternatives;}
+\item{Hybrid Algorithms Can Be Further Combined.}
 \end{itemize}
 \end{frame}
 
@@ -229,7 +243,7 @@ In contrast to \emph{hard indexes}, which are created and managed by DBA, \emph{
 \begin{itemize}
 \item{Further Research on Adaptive Merging and Hybrid Approaches Needed;}
 \item{New Strategies for Hybrid Algorithms;}
-\item{Influence of Undelying Data Structure;}
+\item{Influence of Underlying Data Structure;}
 \item{Integration of Adaptive Indexing into Other Models;}
 \item{Extensions to the Methods.}
 \end{itemize}
